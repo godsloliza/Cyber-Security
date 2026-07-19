@@ -5,9 +5,9 @@ services:
     ports:
       - 5432:5432
     environment:
-      - POSTGRES_USER=prawee
-      - POSTGRES_PASSWORD=1p@ssw0rd
-      - POSTGRES_DB=prawee
+      - POSTGRES_USER=ratchanon
+      - POSTGRES_PASSWORD=pom1344968
+      - POSTGRES_DB=ratchanon
 
   admin:
     image: dpage/pgadmin4
