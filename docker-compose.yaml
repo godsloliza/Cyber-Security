@@ -13,7 +13,7 @@ services:
     image: dpage/pgadmin4
     container_name: 69-s2-admin
     ports:
-      - 808080
+      - 8082:80
     environment:
       - PGADMIN_DEFAULT_EMAIL=titiwat@gmail.com
       - PGADMIN_DEFAULT_PASSWORD=titiwat123
