@@ -5,9 +5,9 @@ services:
     ports:
       - 5432:5432
     environment:
-      - POSTGRES_USER=ratchanon
-      - POSTGRES_PASSWORD=pom1344968
-      - POSTGRES_DB=ratchanon
+      - POSTGRES_USER=titiwat
+      - POSTGRES_PASSWORD=titiwat123
+      - POSTGRES_DB=titiwat
 
   admin:
     image: dpage/pgadmin4
@@ -15,7 +15,7 @@ services:
     ports:
       - 808080
     environment:
-      - PGADMIN_DEFAULT_EMAIL=godsloliza007@gmail.com
-      - PGADMIN_DEFAULT_PASSWORD=pom1344968
+      - PGADMIN_DEFAULT_EMAIL=titiwat@gmail.com
+      - PGADMIN_DEFAULT_PASSWORD=titiwat123
     depends_on:
       - db
