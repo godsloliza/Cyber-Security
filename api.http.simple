@@ -1,0 +1,65 @@
+# REST
+
+## Login
+POST http://localhost:1337/api/auth/local
+Content-Type: application/json
+
+{
+    "identifier": "",
+    "password": ""
+}
+
+## Register
+POST http://localhost:1337/api/auth/local/register
+Content-Type: application/json
+
+{
+    "username": "",
+    "email": "",
+    "password": ""
+}
+
+## Forgot Password
+POST http://localhost:1337/api/auth/forgot-password
+Content-Type: application/json
+
+{
+    "email": ""
+}
+
+## Profile
+GET http://localhost:1337/api/users/me
+Content-Type: application/json
+Authorization: Bearer# REST
+
+## Login
+POST http://localhost:1337/api/auth/local
+Content-Type: application/json
+
+{
+    "identifier": "",
+    "password": ""
+}
+
+## Register
+POST http://localhost:1337/api/auth/local/register
+Content-Type: application/json
+
+{
+    "username": "",
+    "email": "",
+    "password": ""
+}
+
+## Forgot Password
+POST http://localhost:1337/api/auth/forgot-password
+Content-Type: application/json
+
+{
+    "email": ""
+}
+
+## Profile
+GET http://localhost:1337/api/users/me
+Content-Type: application/json
+Authorization: Bearer
