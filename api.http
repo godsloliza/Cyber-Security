@@ -7,8 +7,8 @@ POST http://localhost:9092/admin/login
 Content-Type: application/json
 
 {
-    "email": "",
-    "password": "",
+    "email": "godsloliza@gmail.com",
+    "password": "Pom1344968",
     "rememberMe": false
 }
 
@@ -19,9 +19,9 @@ Content-Type: application/json
 {
     "registrationToken": "",
     "userInfo": {
-        "firstname": "",
+        "firstname": "Test",
         "lastname": "",
-        "password": ""
+        "password": "Pom1344968"
     }
 }
 
@@ -30,13 +30,13 @@ POST http://localhost:9092/admin/forgot-password
 Content-Type: application/json
 
 {
-    "email": ""
+    "email": "godsloliza@gmail.com"
 }
 
 ### 1.4 Profile
 GET http://localhost:9092/admin/users/me
 Content-Type: application/json
-Authorization: Bearer
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzg4MTQzOTI3LCJleHAiOjE3OTA3MzU5Mjd9.pHK43RdtWtuJ_duCgI6C4qQjaHPnWxlDYPOJqe7a1Y0
 
 ## 2.User
 
@@ -45,8 +45,8 @@ POST http://localhost:9092/api/auth/local
 Content-Type: application/json
 
 {
-    "identifier": "",
-    "password": ""
+    "identifier": "godsloliza@gmail.com",
+    "password": "Pom1344968"
 }
 
 ### 2.2 Register
@@ -54,9 +54,9 @@ POST http://localhost:9092/api/auth/local/register
 Content-Type: application/json
 
 {
-    "username": "",
-    "email": "",
-    "password": ""
+    "username": "Test",
+    "email": "godsloliza@gmail.com",
+    "password": "Pom1344968"
 }
 
 ### 2.3 Forgot Password
@@ -64,10 +64,10 @@ POST http://localhost:9092/api/auth/forgot-password
 Content-Type: application/json
 
 {
-    "email": ""
+    "email": "godsloliza@gmail.com"
 }
 
 ### 2.4 Profile
 GET http://localhost:9092/api/users/me
 Content-Type: application/json
-Authorization: Bearer
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNzg4MTQzOTU0LCJleHAiOjE3OTA3MzU5NTR9.uY1Zdj809nRYxfrI-FDghtNFvYRf7Oi9QouOcyS7Iy4
