@@ -36,7 +36,7 @@ Content-Type: application/json
 ### 1.4 Profile
 GET http://localhost:9092/admin/users/me
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzg4MTQzOTI3LCJleHAiOjE3OTA3MzU5Mjd9.pHK43RdtWtuJ_duCgI6C4qQjaHPnWxlDYPOJqe7a1Y0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzg5MzIxOTI1LCJleHAiOjE3OTE5MTM5MjV9.E7WDf8dX06VlOXlaeo6BM-FpITQwN-QmR83lsSQ6q0M
 
 ## 2.User
 

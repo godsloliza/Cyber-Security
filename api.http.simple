@@ -39,8 +39,7 @@ Content-Type: application/json
 
 {
     "resetPasswordToken": "{{$dotenv ADMIN_RESET_TOKEN}}",
-    "password": "{{$dotenv ADMIN_NEW_PASSWORD}}",
-    "passwordConfirmation": "{{$dotenv ADMIN_NEW_PASSWORD}}"
+    "password": "{{$dotenv ADMIN_NEW_PASSWORD}}"
 }
 
 ### 1.4 Profile
@@ -91,3 +90,116 @@ Content-Type: application/json
 GET http://localhost:9092/api/users/me
 Content-Type: application/json
 Authorization: Bearer {{$dotenv USER_JWT}}
+
+
+## 3.Content
+
+### 3.1 Student
+
+#### 3.1.1 Create
+POST http://localhost:9092/api/students
+Content-Type: application/json
+Authorization: Bearer {{$dotenv REST_API_TOKEN}}
+
+{
+    "data": {
+        "firstName": "Somchai",
+        "lastName": "Jaidee",
+        "studentCode": "65001",
+        "email": "somchai@example.com"
+    }
+}
+
+#### 3.1.2 List All
+GET http://localhost:9092/api/students
+Content-Type: application/json
+Authorization: Bearer {{$dotenv REST_API_TOKEN}}
+
+#### 3.1.3 List with ID
+GET http://localhost:9092/api/students/1
+Content-Type: application/json
+Authorization: Bearer {{$dotenv REST_API_TOKEN}}
+
+#### 3.1.4 Update
+PUT http://localhost:9092/api/students/1
+Content-Type: application/json
+Authorization: Bearer {{$dotenv REST_API_TOKEN}}
+
+{
+    "data": {
+        "firstName": "Somchai-Updated"
+    }
+}
+
+### 3.2 Subject
+
+#### 3.2.1 Create
+POST http://localhost:9092/api/subjects
+Content-Type: application/json
+Authorization: Bearer {{$dotenv REST_API_TOKEN}}
+
+{
+    "data": {
+        "subjectName": "Cyber Security",
+        "subjectCode": "CS301",
+        "credit": 3
+    }
+}
+
+#### 3.2.2 List All
+GET http://localhost:9092/api/subjects
+Content-Type: application/json
+Authorization: Bearer {{$dotenv REST_API_TOKEN}}
+
+#### 3.2.3 List with ID
+GET http://localhost:9092/api/subjects/1
+Content-Type: application/json
+Authorization: Bearer {{$dotenv REST_API_TOKEN}}
+
+#### 3.2.4 Update
+PUT http://localhost:9092/api/subjects/1
+Content-Type: application/json
+Authorization: Bearer {{$dotenv REST_API_TOKEN}}
+
+{
+    "data": {
+        "credit": 4
+    }
+}
+
+### 3.3 Teacher
+
+#### 3.3.1 Create
+POST http://localhost:9092/api/teachers
+Content-Type: application/json
+Authorization: Bearer {{$dotenv REST_API_TOKEN}}
+
+{
+    "data": {
+        "firstName": "Prawee",
+        "lastName": "Wongsa",
+        "teacherCode": "T001",
+        "email": "prawee@example.com"
+    }
+}
+
+#### 3.3.2 List All
+GET http://localhost:9092/api/teachers
+Content-Type: application/json
+Authorization: Bearer {{$dotenv REST_API_TOKEN}}
+
+#### 3.3.3 List with ID
+GET http://localhost:9092/api/teachers/1
+Content-Type: application/json
+Authorization: Bearer {{$dotenv REST_API_TOKEN}}
+
+#### 3.3.4 Update
+PUT http://localhost:9092/api/teachers/1
+Content-Type: application/json
+Authorization: Bearer {{$dotenv REST_API_TOKEN}}
+
+{
+    "data": {
+        "lastName": "Wongsa-Updated"
+    }
+}
